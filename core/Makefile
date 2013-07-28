@@ -1255,7 +1255,7 @@ name := $(TARGET_PRODUCT)
 ifeq ($(TARGET_BUILD_TYPE),debug)
   name := $(name)_debug
 endif
-name := $(name)_ota_$(shell date +"%Y-%m-%d")
+name := FTL_Android_4.3_JSS15J_$(shell date +"%Y-%m-%d")-R1
 
 INTERNAL_OTA_PACKAGE_TARGET := $(PRODUCT_OUT)/$(name).zip
 

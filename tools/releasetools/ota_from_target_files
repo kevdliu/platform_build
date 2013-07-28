@@ -400,6 +400,16 @@ def WriteFullOTAPackage(input_zip, output_zip):
   if OPTIONS.wipe_user_data:
     script.FormatPartition("/data")
 
+  script.Print(" ")
+  script.Print("  ______   ______   __                       ")
+  script.Print(" /\  ___\ /\__  _\ /\ \                      ")
+  script.Print(" \ \  __\ \/_/\ \/ \ \ \____    Android 4.3  ")
+  script.Print("  \ \_\      \ \_\  \ \_____\                ")
+  script.Print("   \/_/       \/_/   \/_____/                ")
+  script.Print(" ")
+  script.Print(" By Kevdliu ")
+  script.Print(" ")
+    
   if "selinux_fc" in OPTIONS.info_dict:
     WritePolicyConfig(OPTIONS.info_dict["selinux_fc"], output_zip)
 
